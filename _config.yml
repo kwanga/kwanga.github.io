@@ -13,15 +13,19 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Hitchens
-email: hello@patdryburgh.com
+title: FANAN KWANGA
+email: fanankwanga.fk@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  An inarguably well-designed Jekyll theme.
+  I’m a data analyst who translates messy spreadsheet chaos into clear human stories.
+  Basically, I spend my days looking at columns of numbers, 
+  spotting the weird patterns everyone else misses, and using them to figure out what actually happens next. 
+  I run on strong coffee, clean datasets, and the absolute thrill of an unexpected trend line. 
+  Curious about my background and what drives my work? Read the full story on my About page.
 baseurl: "/hitchens" # the subpath of your site, e.g. /blog
-url: "https://patdryburgh.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://kwanga.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 icon: /assets/images/icon-512.png
-twitter_username: patdryburgh
-github_username:  patdryburgh
+linkedin_username: Fanan kwanga
+github_username:  Kwanga
 
 # Build settings
 markdown: kramdown
