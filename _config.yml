@@ -21,10 +21,10 @@ description: >- # this means to ignore newlines until "baseurl:"
   spotting the weird patterns everyone else misses, and using them to figure out what actually happens next. 
   I run on strong coffee, clean datasets, and the absolute thrill of an unexpected trend line. 
   Curious about my background and what drives my work? Read the full story on my About page.
-baseurl: "/hitchens" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://kwanga.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 icon: /assets/images/icon-512.png
-linkedin_username: Fanan kwanga
+linkedin_username: Fanan-kwanga
 github_username:  Kwanga
 
 # Build settings
