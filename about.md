@@ -18,6 +18,9 @@ I didn't learn how to do this out of a textbook. I learned by getting handed mas
 * **Chasing Outages:** Before this, I was in the telecom space at Legend Internet in Abuja. I ran root-cause analysis on fiber-optic failures, figuring out exactly why the infrastructure kept dying, and built a custom downtime tracking system that finally helped our technicians respond faster than the outages could happen.
 * **Protecting the Bottom Line:** I’ve also spent time in the trenches of energy and logistics. At Seplat Energy, I audited upstream procurement contracts with the exact kind of detail-oriented paranoia that catches expensive mistakes before they happen. At the Nigerian Ports Authority, I executed database verifications to protect regulatory metrics and helped digitize years of legacy files so administrative teams could actually access their data instantly.
 
+#### On the Side: Decoding Retail Behavior
+When I'm not untangling day-to-day business operations, I like to put my tools to work on independent deep dives. Recently, I ran a full end-to-end analysis of an online retail dataset, taking it from raw transactions in Excel, through PostgreSQL for the heavier querying, into Power BI for the final dashboard. I mapped out RFM segmentation to separate the VIP customers from the one-time buyers, ran a market basket analysis to catch what people tend to buy together, and surfaced the less flattering truths too—like how much revenue was riding on a small cluster of loyal customers and where cancellations were quietly eating into performance.
+
 ### The Foundation
 
 I hold a **B.Sc. in Computer Science from Bingham University**, which gives me the technical logic behind every dashboard and database query I build. Everything else, I learned by doing. 
