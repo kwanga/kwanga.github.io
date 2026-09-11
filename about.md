@@ -1,17 +1,27 @@
 ---
-layout: post
+layout: page
 title: About
+permalink: /about/
 ---
 
-Undoubtably one of the great minds of our time, Christopher Hitchens challenged his readers to think deeply on topics of politics, religion, war, and science. This Jekyll theme is designed in his memory.
+### If it's broken, disorganized, or buried in a messy spreadsheet I want to look at it.
 
-<figure>
-  <img alt="Christopher Hitchens" src="https://upload.wikimedia.org/wikipedia/commons/6/63/Christopher_Hitchens_2008-04-24_001.jpg" />
-  <figcaption>
-    Photo by Fri Tanke and licensed under the <a href="https://creativecommons.org/licenses/by/3.0/deed.en">Creative Commons Attribution 3.0 Unported</a> license.
-  </figcaption>
-</figure>
+I’m Fanan, a Data & Operations Analyst who has a genuine weakness for chaotic business systems. While most people see a pile of broken operational logs as a headache, something happens to my brain when I get to untangle them and find the pattern nobody else caught. 
 
-From [Wikipedia](https://en.wikipedia.org/wiki/Christopher_Hitchens):
+What I actually do is take chaos and give it a shape people can act on. My day-to-day tools are **SQL, Power BI, and Advanced Excel**, but those are just the paintbrushes. My real job is translating digital noise into actual human strategy.
 
->Christopher Eric Hitchens (13 April 1949 – 15 December 2011) was an Anglo-American author, columnist, essayist, orator, religious and literary critic, social critic, and journalist. Hitchens was the author, co-author, editor or co-editor of over 30 books, including five collections of essays on culture, politics and literature. A staple of public discourse, his confrontational style of debate made him both a lauded intellectual and a controversial public figure. He contributed to New Statesman, The Nation, The Weekly Standard, The Atlantic, London Review of Books, The Times Literary Supplement, Slate, Free Inquiry and Vanity Fair.
+### The Real-World Proof
+
+I didn't learn how to do this out of a textbook. I learned by getting handed massive operational messes and being told to make sense of them:
+
+* **Hunting Bottlenecks:** Currently at Conaj Concierge, I spend my days digging into complex workflows, finding out exactly where things are getting stuck, and building KPI templates that give leadership clear answers while making everyone's Monday morning reporting process a little less miserable.
+* **Chasing Outages:** Before this, I was in the telecom space at Legend Internet in Abuja. I ran root-cause analysis on fiber-optic failures, figuring out exactly why the infrastructure kept dying, and built a custom downtime tracking system that finally helped our technicians respond faster than the outages could happen.
+* **Protecting the Bottom Line:** I’ve also spent time in the trenches of energy and logistics. At Seplat Energy, I audited upstream procurement contracts with the exact kind of detail-oriented paranoia that catches expensive mistakes before they happen. At the Nigerian Ports Authority, I executed database verifications to protect regulatory metrics and helped digitize years of legacy files so administrative teams could actually access their data instantly.
+
+### The Foundation
+
+I hold a **B.Sc. in Computer Science from Bingham University**, which gives me the technical logic behind every dashboard and database query I build. Everything else, I learned by doing. 
+
+I look at a massive database the same way a detective looks at a room full of clues. If you want to talk data, optimize a broken operational pipeline, or hand me a dataset that needs to be whipped into shape, let's chat!
+
+---
