@@ -27,4 +27,6 @@ I hold a **B.Sc. in Computer Science from Bingham University**, which gives me t
 
 I look at a massive database the same way a detective looks at a room full of clues. If you want to talk data, optimize a broken operational pipeline, or hand me a dataset that needs to be whipped into shape, let's chat!
 
----
+<div style="text-align: center; margin: 40px auto 20px auto; width: 100%; clear: both; display: block;">
+  <hr style="margin: 0 auto !important; display: inline-block;">
+</div>
