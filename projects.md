@@ -1,12 +1,12 @@
 ---
-layout: home
+layout: default
 title: Projects
 permalink: /projects.html
 ---
 
 <!-- 🛠️ THIS MANUALLY CREATES THE BEAUTIFUL YELLOW HEADER BLOCK -->
 <header class="site-masthead" style="padding-bottom: 40px !important; min-height: auto !important; text-align: center; margin-bottom: 40px;">
-  <div style="width: 100%; max-width: 820px; margin: 0 auto; padding: 0 20px; box-sizing: border-box;">
+  <div style="width: 100%; max-width: 820px; margin: 0 auto; padding: 0 20px; box-sizing: border-box; display: block;">
     <h1 class="content-title" style="margin-bottom: 20px; font-size: 2.2rem; font-weight: bold; border: none; color: #000;">Master Project Index</h1>
     
     <p style="font-size: 1.25rem; line-height: 1.8; color: #111; margin: 0 auto; font-family: serif; max-width: 720px;">
@@ -15,7 +15,7 @@ permalink: /projects.html
   </div>
 </header>
 
-<!-- 🛠️ MASTER INDEX LOOP LISTING ALL PROJECTS WITHOUT 3-PAGE LIMITS -->
+<!-- 🛠️ CLEAN LOOP WITHOUT BREAKING SYNTAX FLAGS -->
 <main class="home" id="main" role="main" aria-label="Content" style="max-width: 760px; margin: 0 auto; padding: 0 20px; box-sizing: border-box;">
   <ul class="post-list" style="list-style: none; padding: 0; margin: 0;">
     {% for post in site.posts %}
@@ -33,10 +33,6 @@ permalink: /projects.html
             {{ post.excerpt | strip_html | truncatewords: 35 }}
           </p>
         {% endif %}
-      </li>
-    {% empty %}
-      <li style="text-align: center; color: #666; font-family: serif; font-size: 1.2rem; margin-top: 40px;">
-        Case studies are currently pulling into production. Your data analytics workflows will display here shortly!
       </li>
     {% endfor %}
   </ul>
