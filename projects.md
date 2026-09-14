@@ -1,7 +1,7 @@
 ---
-layout: default
+layout: home
 title: Projects
-permalink: /projects/
+permalink: /projects.html
 ---
 
 <!-- 🛠️ THIS MANUALLY CREATES THE BEAUTIFUL YELLOW HEADER BLOCK -->

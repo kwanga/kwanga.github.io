@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-permalink: /about/
+permalink: /about.html
 ---
 
 ### If it's broken, disorganized, or buried in a messy spreadsheet I want to look at it.
