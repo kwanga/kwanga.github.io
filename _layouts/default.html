@@ -18,6 +18,8 @@
       {%- include google-analytics.html -%}
     {%- endif -%}
 
+    <!-- 🛠️ 1. FIXED ICON LIBRARY LINK STRAP -->
+    <link rel="stylesheet" href="https://cloudflare.com">
   </head>
   <body>
 
@@ -37,12 +39,30 @@
       {% include search.html %}
     {% endunless %}
 
-    {% include menu.html %}
+    <!-- 🛠️ 2. REPLACED TEXT LINK LOOP WITH INSTANT BRAND ICONS -->
+    <div style="text-align: center; margin: 40px auto 25px auto; font-size: 1.7rem; width: 100%; display: block;">
+      
+      <!-- LinkedIn Icon -->
+      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" style="margin: 0 20px; color: #111; text-decoration: none;" title="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+
+      <!-- Substack Icon -->
+      <a href="https://substack.com" target="_blank" rel="noopener noreferrer" style="margin: 0 20px; color: #111; text-decoration: none;" title="Substack">
+        <i class="fas fa-bookmark"></i>
+      </a>
+
+      <!-- GitHub Icon -->
+      <a href="https://github.com" target="_blank" rel="noopener noreferrer" style="margin: 0 20px; color: #111; text-decoration: none;" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+
+    </div>
 
     {% unless site.hide_credits %}
-      <aside class="site-credits">
+      <aside class="site-credits" style="text-align: center; margin-top: 10px;">
         <p>
-          <small><a href="https://github.com/patdryburgh/hitchens">Hitchens Theme</a> powered by <a href="http://jekyllrb.com">Jekyll</a></small>
+          <small>Powered by <a href="http://jekyllrb.com">Jekyll</a></small>
         </p>
       </aside>
     {% endunless %}
