@@ -30,61 +30,59 @@ layout: default
 
 <main class="home" id="main" role="main" aria-label="Content" style="max-width: 800px; margin: 0 auto; padding: 20px 20px 40px 20px; box-sizing: border-box;">
 
-  <!-- 📊 BRAND MATCHING KEY IMPACT METRICS SECTION -->
+  <!-- 📊 KEY IMPACT METRICS SECTION -->
   <div style="width: 100%; max-width: 760px; margin: 20px auto 50px auto; font-family: sans-serif; clear: both; display: block;">
     <span style="font-size: 0.8rem; font-weight: bold; letter-spacing: 2px; color: #555; display: block; margin-bottom: 5px; text-align: center; font-family: sans-serif;">BY THE NUMBERS</span>
     <h2 style="font-size: 2rem; font-weight: bold; color: #000; margin: 0 0 30px 0; text-align: center; border: none; font-family: serif;">Key Impact</h2>
 
     <div style="display: flex; flex-direction: row; justify-content: space-between; gap: 15px; width: 100%; flex-wrap: wrap; box-sizing: border-box;">
-      
-      <!-- CARD 1: PROJECTS BUILT -->
       <div style="flex: 1; min-width: 160px; background: #000000; border: 1px solid #222; border-radius: 6px; padding: 25px 15px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.08); box-sizing: border-box;">
         <div style="font-size: 2.2rem; font-weight: bold; color: #f2c811; margin-bottom: 5px; font-family: sans-serif;">5+</div>
         <div style="font-size: 0.85rem; color: #aaa; font-weight: 500; line-height: 1.3;">End-to-End Projects Built</div>
       </div>
-
-      <!-- CARD 2: ROWS ANALYZED -->
       <div style="flex: 1; min-width: 160px; background: #000000; border: 1px solid #222; border-radius: 6px; padding: 25px 15px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.08); box-sizing: border-box;">
         <div style="font-size: 2.2rem; font-weight: bold; color: #f2c811; margin-bottom: 5px; font-family: sans-serif;">10M+</div>
         <div style="font-size: 0.85rem; color: #aaa; font-weight: 500; line-height: 1.3;">Rows Cleaned &amp; Modeled</div>
       </div>
-
-      <!-- CARD 3: DATA PIPELINES -->
       <div style="flex: 1; min-width: 160px; background: #000000; border: 1px solid #222; border-radius: 6px; padding: 25px 15px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.08); box-sizing: border-box;">
         <div style="font-size: 2.2rem; font-weight: bold; color: #f2c811; margin-bottom: 5px; font-family: sans-serif;">3+</div>
         <div style="font-size: 0.85rem; color: #aaa; font-weight: 500; line-height: 1.3;">Data Pipelines Deployed</div>
       </div>
-
-      <!-- CARD 4: INDUSTRIES SOLVED -->
       <div style="flex: 1; min-width: 160px; background: #000000; border: 1px solid #222; border-radius: 6px; padding: 25px 15px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.08); box-sizing: border-box;">
         <div style="font-size: 2.2rem; font-weight: bold; color: #f2c811; margin-bottom: 5px; font-family: sans-serif;">5</div>
         <div style="font-size: 0.85rem; color: #aaa; font-weight: 500; line-height: 1.3;">Business Cases Solved</div>
       </div>
-
     </div>
   </div>
 
   <h1 class="content-title divided" style="text-align: center; margin-bottom: 30px; margin-top: 20px;">Featured Analytics Case Studies</h1>
 
-  <!-- 🛠️ AUTOMATIC CAROUSEL SLIDESHOW WIDGET -->
+  <!-- 📐 COMPREHENSIVE AUTOMATIC + MANUAL 90-DEGREE FLUSH CONTROLS STYLES -->
   <style>
     .slider-frame {
       width: 100%;
       max-width: 760px;
       height: 420px;
       margin: 0 auto;
-      overflow: hidden;
       position: relative;
+      overflow: hidden;
       border-radius: 8px;
       box-shadow: 0 6px 16px rgba(0,0,0,0.1);
       border: 1px solid rgba(0,0,0,0.1);
     }
+    
     .slide-wrapper {
       display: flex;
       width: 300%;
       height: 100%;
-      animation: autoSlide 15s infinite ease-in-out;
+      transition: transform 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+      animation: autoRotate 20s infinite ease-in-out;
     }
+    
+    .slider-frame:hover .slide-wrapper {
+      animation-play-state: paused;
+    }
+
     .slide-card {
       width: 33.333%;
       height: 100%;
@@ -100,35 +98,95 @@ layout: default
       bottom: 0;
       left: 0;
       width: 100%;
-      background: linear-gradient(transparent, rgba(249, 247, 247, 0.85));
-      color: #060000;
-      padding: 25px 20px;
+      background: linear-gradient(transparent, rgba(0, 0, 0, 0.85));
+      color: #fff;
+      padding: 25px 65px;
       box-sizing: border-box;
       font-family: sans-serif;
+      z-index: 2;
     }
     .slide-overlay h3 {
       margin: 0 0 8px 0;
       font-size: 1.5rem;
-      color: #0a0000;
+      color: #fff;
     }
     .slide-overlay p {
       margin: 0;
       font-size: 1rem;
-      color: #000000;
+      color: #ddd;
       line-height: 1.4;
     }
-    @keyframes autoSlide {
-      0%, 28%   { transform: translateX(0); }
-      33%, 61%  { transform: translateX(-33.333%); }
-      66%, 94%  { transform: translateX(-66.666%); }
-      100%      { transform: translateX(0); }
+    
+    input[name="slide-control"] {
+      display: none;
+    }
+    
+    #slide1:checked ~ .slide-wrapper { animation: none; transform: translateX(0); }
+    #slide2:checked ~ .slide-wrapper { animation: none; transform: translateX(-33.333%); }
+    #slide3:checked ~ .slide-wrapper { animation: none; transform: translateX(-66.666%); }
+
+    /* 📐 SLEEK 90-DEGREE STRIP FRAME BAR CONTROLS */
+    .arrow-btn {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      height: 100%;
+      width: 48px;
+      background: rgba(0, 0, 0, 0.35);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 10;
+      user-select: none;
+      transition: background 0.2s ease, width 0.15s ease;
+      box-sizing: border-box;
+    }
+    .arrow-btn:hover {
+      background: rgba(0, 0, 0, 0.75);
+      width: 54px;
+    }
+    .prev-arrow { left: 0; }
+    .next-arrow { right: 0; }
+
+    /* SVG CHEVRON RENDERING GRAPHICS */
+    .arrow-btn svg {
+      width: 18px;
+      height: 18px;
+      fill: none;
+      stroke: #ffffff;
+      stroke-width: 4;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      transition: transform 0.2s ease;
+    }
+    .arrow-btn:hover svg {
+      transform: scale(1.15);
+    }
+
+    #slide1:checked ~ .arrow1 { display: block; }
+    #slide2:checked ~ .arrow2 { display: block; }
+    #slide3:checked ~ .arrow3 { display: block; }
+    
+    .arrow-init { display: block; }
+    #slide1:checked ~ .arrow-init, #slide2:checked ~ .arrow-init, #slide3:checked ~ .arrow-init { display: none; }
+
+    @keyframes autoRotate {
+      0%, 28%    { transform: translateX(0); }
+      33%, 61%   { transform: translateX(-33.333%); }
+      66%, 94%   { transform: translateX(-66.666%); }
+      100%       { transform: translateX(0); }
     }
   </style>
 
+  <!-- 🎬 THE INTERACTIVE SLIDESHOW CONTEXT CONTAINER -->
   <div class="slider-frame">
+    <input type="radio" name="slide-control" id="slide1">
+    <input type="radio" name="slide-control" id="slide2">
+    <input type="radio" name="slide-control" id="slide3">
+
     <div class="slide-wrapper">
-      
-      <!-- 🎬 SLIDE 1: LINKED DIRECTLY TO ONLINE RETAIL POST FILE -->
+      <!-- SLIDE 1 -->
       <div class="slide-card">
         <a href="{{ '/2026/09/14/online-retail-analytics.html' | relative_url }}">
           <img src="{{ '/assets/images/retail-dashboard.png' | relative_url }}" alt="Retail Analysis Overview">
@@ -139,7 +197,7 @@ layout: default
         </a>
       </div>
 
-      <!-- 🎬 SLIDE 2: LINKED DIRECTLY TO TELECOM OUTAGE POST FILE -->
+      <!-- SLIDE 2 -->
       <div class="slide-card">
         <a href="{{ '/2026/09/14/fiber-outage-tracking.html' | relative_url }}">
           <img src="{{ '/assets/images/fiber-outage-tracking.png' | relative_url }}" alt="Telecom Outage Dashboard">
@@ -150,7 +208,7 @@ layout: default
         </a>
       </div>
 
-      <!-- 🎬 SLIDE 3: LINKED DIRECTLY TO PORTS COMPLIANCE POST FILE -->
+      <!-- SLIDE 3 -->
       <div class="slide-card">
         <a href="{{ '/2026/09/14/ports-compliance.html' | relative_url }}">
           <img src="{{ '/assets/images/ports-compliance.png' | relative_url }}" alt="Data Verification Tracking">
@@ -160,8 +218,16 @@ layout: default
           </div>
         </a>
       </div>
-
     </div>
-  </div>
 
-</main>
+    <!-- 🛠️ AUTOMATIC INITIAL TRACKS -->
+    <div class="arrow-init">
+      <label for="slide3" class="arrow-btn prev-arrow"><svg viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7"/></svg></label>
+      <label for="slide2" class="arrow-btn next-arrow"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></label>
+    </div>
+    
+    <!-- 🛠️ MAP 1: BUTTON ACTS WHEN STANDING ON SLIDE 1 -->
+    <div class="arrow1">
+      <label for="slide3" class="arrow-btn prev-arrow"><svg viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7"/></svg></label>
+      <label for="slide2" class="arrow-btn next-arrow"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></label>
+    </div>
