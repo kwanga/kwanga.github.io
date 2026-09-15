@@ -19,7 +19,7 @@
     {%- endif -%}
 
   </head>
-  <body>
+  <body id="top">
 
     {% if page.layout == 'home' %}
       <a href="#main" class="skip-navigation">
@@ -36,6 +36,12 @@
     {% unless site.hide_search %}
       {% include search.html %}
     {% endunless %}
+    <!-- 🔼 MINIMALIST BACK TO TOP SHORTCUT -->
+    <div style="text-align: center; margin: 50px auto 10px auto; width: 100%; display: block; clear: both;">
+      <a href="#top" style="color: #000; text-decoration: none; font-size: 0.95rem; font-weight: bold; font-family: sans-serif; display: inline-block; padding: 5px 12px; border: 1px solid rgba(0,0,0,0.15); border-radius: 4px; background: rgba(0,0,0,0.02);" title="Back to top">
+        ↑ Back to Top
+      </a>
+    </div>
 
     <!-- 🛠️ DIRECT-RENDER VISUAL SOCIAL ICONS (BUILT TO NEVER FAIL) -->
     <div style="text-align: center; margin: 40px auto 25px auto; width: 100%; display: flex; justify-content: center; align-items: center; gap: 30px;">
