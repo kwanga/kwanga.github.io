@@ -4,7 +4,7 @@ title: Projects
 permalink: /projects.html
 ---
 
-<div style="background-color: #f2c811; min-height: 100vh; width: 100%; display: block; margin: 0; padding: 0 0 60px 0; box-sizing: border-box; clear: both;">
+<div style="background-color: #f9d531; min-height: 100vh; width: 100%; display: block; margin: 0; padding: 0 0 60px 0; box-sizing: border-box; clear: both;">
   
   <!-- 🛠️ INJECTED CLEAN TOP HEADER BACK BUTTON STRIP -->
   <nav style="display: flex; justify-content: space-between; align-items: center; width: 100%; max-width: 820px; margin: 0 auto; padding: 15px 20px; box-sizing: border-box; font-family: sans-serif;">

@@ -57,7 +57,7 @@ layout: default
 
   <h1 class="content-title divided" style="text-align: center; margin-bottom: 30px; margin-top: 20px;">Featured Analytics Case Studies</h1>
 
-  <!-- 📐 COMPREHENSIVE AUTOMATIC + MANUAL 90-DEGREE FLUSH CONTROLS STYLES -->
+  <!-- 📐 SLIDESHOW FRAMEWORK WITH 90-DEGREE CHEVRON BUTTON CARRIERS -->
   <style>
     .slider-frame {
       width: 100%;
@@ -76,7 +76,7 @@ layout: default
       width: 300%;
       height: 100%;
       transition: transform 0.6s cubic-bezier(0.77, 0, 0.175, 1);
-      animation: autoRotate 20s infinite ease-in-out;
+      animation: autoRotate 25s infinite ease-in-out;
     }
     
     .slider-frame:hover .slide-wrapper {
@@ -121,11 +121,12 @@ layout: default
       display: none;
     }
     
+    /* 📐 STATE CONTROLS WHEN MANUAL BUTTONS INTERRUPT ROTATION */
     #slide1:checked ~ .slide-wrapper { animation: none; transform: translateX(0); }
     #slide2:checked ~ .slide-wrapper { animation: none; transform: translateX(-33.333%); }
     #slide3:checked ~ .slide-wrapper { animation: none; transform: translateX(-66.666%); }
 
-    /* 📐 SLEEK 90-DEGREE STRIP FRAME BAR CONTROLS */
+    /* 📐 90-DEGREE FLUSH EDGED CHEVRON STRIP CONTROLS */
     .arrow-btn {
       position: absolute;
       top: 0;
@@ -149,25 +150,22 @@ layout: default
     .prev-arrow { left: 0; }
     .next-arrow { right: 0; }
 
-    /* SVG CHEVRON RENDERING GRAPHICS */
     .arrow-btn svg {
-      width: 18px;
-      height: 18px;
+      width: 20px;
+      height: 20px;
       fill: none;
       stroke: #ffffff;
       stroke-width: 4;
       stroke-linecap: round;
       stroke-linejoin: round;
-      transition: transform 0.2s ease;
-    }
-    .arrow-btn:hover svg {
-      transform: scale(1.15);
     }
 
+    /* 🧠 DYNAMIC CONDITIONS TO SHOW THE CORRECT ARROWS PER SLIDE */
     #slide1:checked ~ .arrow1 { display: block; }
     #slide2:checked ~ .arrow2 { display: block; }
     #slide3:checked ~ .arrow3 { display: block; }
     
+    /* DEFAULT STATE ON PAGE LAUNCH WHILE ROTATING AUTOMATICALLY */
     .arrow-init { display: block; }
     #slide1:checked ~ .arrow-init, #slide2:checked ~ .arrow-init, #slide3:checked ~ .arrow-init { display: none; }
 
@@ -179,7 +177,7 @@ layout: default
     }
   </style>
 
-  <!-- 🎬 THE INTERACTIVE SLIDESHOW CONTEXT CONTAINER -->
+  <!-- 🎬 SLIDESHOW CONTEXT CONTAINER -->
   <div class="slider-frame">
     <input type="radio" name="slide-control" id="slide1">
     <input type="radio" name="slide-control" id="slide2">
@@ -220,14 +218,12 @@ layout: default
       </div>
     </div>
 
-    <!-- 🛠️ AUTOMATIC INITIAL TRACKS -->
+    <!-- 🛠️ COMPLETE CLICK REDIRECT INTERFACE LINKS -->
+    <!-- Initial State (Before User Clicks Anything) -->
     <div class="arrow-init">
       <label for="slide3" class="arrow-btn prev-arrow"><svg viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7"/></svg></label>
       <label for="slide2" class="arrow-btn next-arrow"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></label>
     </div>
     
-    <!-- 🛠️ MAP 1: BUTTON ACTS WHEN STANDING ON SLIDE 1 -->
+    <!-- Active Channels for Slide 1 -->
     <div class="arrow1">
-      <label for="slide3" class="arrow-btn prev-arrow"><svg viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7"/></svg></label>
-      <label for="slide2" class="arrow-btn next-arrow"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></label>
-    </div>
