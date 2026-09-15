@@ -40,12 +40,21 @@ SELECT
     t.country,
     (t.quantity * t.unit_price) AS revenue,
     -- Transaction behavioral flags
-    CASE WHEN t.invoice_no LIKE 'C%' THEN TRUE ELSE FALSE END AS is_cancellation,
-    CASE WHEN t.quantity < 0 THEN TRUE ELSE FALSE END AS is_return,
+    CASE 
+        WHEN t.invoice_no LIKE 'C%' THEN TRUE 
+        ELSE FALSE 
+    END AS is_cancellation,
+    CASE 
+        WHEN t.quantity < 0 THEN TRUE 
+        ELSE FALSE 
+    END AS is_return,
     -- Operational overhead tracking flag
     CASE
-        WHEN t.stock_code IN ('POST', 'DOT', 'M', 'D', 'C2', 'BANK CHARGES', 'AMAZONFEE', 'CRUK', 'S', 'B')
-        THEN TRUE
+        WHEN t.stock_code IN (
+            'POST', 'DOT', 'M', 'D', 'C2', 
+            'BANK CHARGES', 'AMAZONFEE', 'CRUK', 
+            'S', 'B'
+        ) THEN TRUE
         ELSE FALSE
     END AS is_non_product
 FROM raw_transactions t
