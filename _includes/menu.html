@@ -1,26 +1,35 @@
-{% assign menu = site.data.menu %}
+<nav class="site-navigation" style="display: flex; justify-content: space-between; align-items: center; width: 100%; max-width: 820px; margin: 0 auto; padding: 15px 20px; box-sizing: border-box; font-family: sans-serif;">
+  
+  <!-- 🧭 THE STEP-BY-STEP DYNAMIC BACKTRACKING ENGINE -->
+  <div class="breadcrumb-trail" style="font-size: 0.95rem; font-weight: 500; color: #000;">
+    <a href="{{ '/' | relative_url }}" style="color: #000; text-decoration: none; border-bottom: 1px solid transparent;">Home</a>
+    
+    {% if page.url contains '/about' %}
+      <span style="margin: 0 8px; color: rgba(0,0,0,0.4);">/</span>
+      <span style="font-weight: bold; color: #000;">About</span>
+    {% endif %}
 
-{% if menu %}
-  <nav class="site-navigation" role="navigation">
-    <ul>
-      <li>
-        <a href="{{ '/' | prepend: site.baseurl }}">
-          Home
-        </a>
-      </li>
+    {% if page.url contains '/projects' %}
+      <span style="margin: 0 8px; color: rgba(0,0,0,0.4);">/</span>
+      <span style="font-weight: bold; color: #000;">Projects</span>
+    {% endif %}
+
+    <!-- IF LOOKING AT A DEEP INDIVIDUAL POST INSIDE THE PROJECTS FOLDER -->
+    {% if page.layout == 'page' and page.url != '/about.html' and page.url != '/projects.html' %}
+      <span style="margin: 0 8px; color: rgba(0,0,0,0.4);">/</span>
+      <a href="{{ '/projects.html' | relative_url }}" style="color: #000; text-decoration: none;">Projects</a>
+      <span style="margin: 0 8px; color: rgba(0,0,0,0.4);">/</span>
+      <span style="font-weight: bold; color: #000; display: inline-block; max-width: 150px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; vertical-align: bottom;" title="{{ page.title }}">Current Case Study</span>
+    {% endif %}
+  </div>
+
+  <!-- RIGHT SIDE: STANDARD MENU TABS -->
+  <div class="menu-links" style="display: flex; gap: 20px;">
     {% for item in site.data.menu %}
-      <li {% if page.url == item.url %}class="active"{% endif %}>
-        {% if item.url contains 'http' %}
-          <a href="{{ item.url }}">
-            {{ item.title }}
-          </a>
-        {% else %}
-          <a href="{{ item.url | prepend: site.baseurl }}">
-            {{ item.title }}
-          </a>
-        {% endif %}
-      </li>
+      <a href="{{ item.url | relative_url }}" style="color: #000; text-decoration: none; font-weight: bold; font-size: 0.95rem; {% if page.url == item.url %}border-bottom: 2px solid #000;{% endif %}">
+        {{ item.title }}
+      </a>
     {% endfor %}
-    </ul>
-  </nav>
-{% endif %}
+  </div>
+
+</nav>
