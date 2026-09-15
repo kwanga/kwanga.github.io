@@ -5,17 +5,6 @@ date: 2026-09-14
 excerpt: "Taking 541,000+ raw e-commerce transaction lines from Excel, building a relational cleaning infrastructure in PostgreSQL, and deploying an interactive Power BI operational dashboard."
 ---
 
-<div style="max-width: 780px; margin: 0 auto; padding: 0 10px; box-sizing: border-box;">
-
-### 📊 Project Portals & Repositories
-
-<div style="text-align: center; margin: 30px auto; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-  <a href="https://github.com" target="_blank" rel="noopener noreferrer" style="background-color: #000; color: #fff; padding: 12px 24px; text-decoration: none; border-radius: 4px; font-weight: bold; display: inline-block; font-family: sans-serif;">👉 View Full Code on GitHub</a>
-  <a href="https://powerbi.com" target="_blank" rel="noopener noreferrer" style="background-color: #f2c811; color: #000; padding: 12px 24px; text-decoration: none; border-radius: 4px; font-weight: bold; display: inline-block; font-family: sans-serif;">📊 Explore Live Power BI Dashboard</a>
-</div>
-
----
-
 ### Executive Summary
 
 This project analyzes **541,909 raw transactions** from a UK-based online gift retailer to uncover underlying revenue drivers, customer value segments, and critical operational risks. 
@@ -113,5 +102,9 @@ While the current top-line numbers look successful on paper, the lack of diversi
 
 *   **The "Data Ghost" Problem:** Discovered that Hong Kong generated high revenue numbers but showed zero registered customers. Investigation confirmed that all Hong Kong orders were executed as guest checkouts with no recorded customer IDs—proving that metrics can be correct on paper but highly misleading without proper analysis.
 *   **Mean vs. Median Distributions:** The raw average order value looked high (£494.10) but comparing it to the median order value (£303.84) exposed that a tiny pocket of wholesale bulk buyers was inflating the average, proving why checking statistical distribution symmetry is vital.
+---
+### Project Repositories & Portals
 
+* **Code & Technical Docs:** [View Full Repository on GitHub](https://github.com)
+* **Interactive Visualization Layer:** [Explore Live Power BI Dashboard](https://powerbi.com)
 </div>
