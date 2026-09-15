@@ -100,7 +100,7 @@ While the current top-line numbers look successful on paper, the lack of diversi
 
 ### Project Portals & Repositories
 
-<div style="margin: 20px 0; display: flex; flex-direction: row; gap: 15px; align-items: center; justify-content: flex-start; width: 100%; box-sizing: border-box;">
+<div style="margin: 20px 0; display: flex; flex-direction: row; gap: 15px; align-items: center; justify-content: center; width: 100%; box-sizing: border-box;">
   <a href="https://github.com" target="_blank" rel="noopener noreferrer" style="background-color: #000; color: #fff; padding: 8px 16px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 0.95rem; font-family: sans-serif; display: inline-block; white-space: nowrap;">👉 GitHub Repository</a>
-  <a href="https://powerbi.com" target="_blank" rel="noopener noreferrer" style="background-color: #f2c811; color: #000; padding: 8px 16px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 0.95rem; font-family: sans-serif; display: inline-block; white-space: nowrap;">📊 Power BI Dashboard</a>
+  <a href="https://powerbi.com" target="_blank" rel="noopener noreferrer" style="background-color: #000; color: #fff; padding: 8px 16px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 0.95rem; font-family: sans-serif; display: inline-block; white-space: nowrap;">📊 Power BI Dashboard</a> 
 </div>
