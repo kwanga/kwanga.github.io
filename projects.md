@@ -1,27 +1,28 @@
----
-layout: page
-title: Projects
-permalink: /projects.html
----
+<nav class="site-navigation" style="display: flex; justify-content: space-between; align-items: center; width: 100%; max-width: 820px; margin: 0 auto; padding: 15px 20px; box-sizing: border-box; font-family: sans-serif;">
+  
+  <!-- 🛠️ DYNAMIC HISTORICAL BACK BUTTON (ONLY HIDES ON THE MAIN HOMEPAGE) -->
+  <div class="back-navigation">
+    {% if page.url != "/" and page.url != "/index.html" %}
+      <a href="javascript:history.back()" style="color: #000; text-decoration: none; font-weight: bold; font-size: 0.9rem; display: flex; align-items: center; gap: 5px; background: rgba(0,0,0,0.04); border: 1px solid rgba(0,0,0,0.12); padding: 6px 14px; border-radius: 4px;" title="Go back">
+        <span>←</span> Back
+      </a>
+    {% else %}
+      <span>&nbsp;</span>
+    {% endif %}
+  </div>
 
-Below is a complete index of the analytical models, data frameworks, and technical case studies I have built. Click any project title to read the full end-to-end breakdown.
+  <!-- RIGHT SIDE: PREMIUM CLICKABLE NAVIGATION TABS -->
+  <div class="menu-links" style="display: flex; gap: 10px;">
+    {% for item in site.data.menu %}
+      <a href="{{ item.url | relative_url }}" style="text-decoration: none; font-weight: bold; font-size: 0.9rem; padding: 6px 14px; border-radius: 4px; transition: all 0.2s ease; font-family: sans-serif; display: inline-block; white-space: nowrap;
+        {% if page.url == item.url or page.url == '/index.html' and item.url == '/' or page.url == '/' and item.url == '/' %}
+          background-color: #000000; color: #ffffff; border: 1px solid #000000;
+        {% else %}
+          background-color: transparent; color: #000000; border: 1px solid rgba(0,0,0,0.15);
+        {% endif %}">
+        {{ item.title }}
+      </a>
+    {% endfor %}
+  </div>
 
-<ul class="post-list" style="list-style: none; padding: 0; margin-top: 30px;">
-  {% for post in site.posts %}
-    <li style="margin-bottom: 45px; border-bottom: 1px dashed rgba(0,0,0,0.15); padding-bottom: 25px;">
-      <span class="post-meta" style="font-size: 0.95rem; color: #666; display: block; margin-bottom: 8px; font-family: sans-serif;">
-        {{ post.date | date: "%B %d, %Y" }}
-      </span>
-      <h2 style="margin: 0 0 12px 0; font-size: 1.75rem;">
-        <a href="{{ post.url | relative_url }}" style="color: #000; text-decoration: none; font-weight: bold; border-bottom: none;">
-          {{ post.title }}
-        </a>
-      </h2>
-      {% if post.excerpt %}
-        <p style="margin: 0; color: #333; line-height: 1.7; font-size: 1.1rem; font-family: serif;">
-          {{ post.excerpt | strip_html | truncatewords: 35 }}
-        </p>
-      {% endif %}
-    </li>
-  {% endfor %}
-</ul>
+</nav>
