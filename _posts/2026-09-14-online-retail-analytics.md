@@ -5,9 +5,20 @@ date: 2026-09-14
 excerpt: "Taking 541,000+ raw e-commerce transaction lines from Excel, building a relational cleaning infrastructure in PostgreSQL, and deploying an interactive Power BI operational dashboard."
 ---
 
+<article class="page" style="max-width: 760px; margin: 0 auto; padding: 20px; box-sizing: border-box; display: block; clear: both;">
+
+### 📊 Project Repositories & Full Documentation
+
+To review the complete long-form engineering metrics, full data dictionary tables, and raw script configurations, visit the production spaces directly:
+
+*   **View Full Code & Documentation:** [👉 GitHub Repository Link](https://github.com)
+*   **Explore Interactive Dashboard:** [👉 Live Power BI Report](https://powerbi.com)
+
+---
+
 ### Executive Summary
 
-This project analyzes **541,909 raw transactions** from a UK-based online gift retailer to uncover underlying revenue drivers, customer behavior metrics, and hidden operational risks.
+This project analyzes **541,909 raw transactions** from a UK-based online gift retailer to uncover underlying revenue drivers, customer behavior metrics, and hidden operational risks. 
 
 Instead of jumping straight into basic charts, I built a reproducible data engineering pipeline: cleaning and modeling the data architecture inside **PostgreSQL**, generating advanced analytics like **RFM Customer Segmentation** and **Market Basket Co-occurrence models**, and deploying a multi-page interactive **Power BI dashboard** powered by dynamic DAX measures.
 
@@ -25,7 +36,7 @@ To give this analysis a true commercial edge, I set out to answer a defined set 
 
 ### Data Pipeline & Cleaning Infrastructure (SQL)
 
-The raw source dataset (from the UCI Machine Learning Repository) arrived with structural challenges: **135,080 rows missing customer IDs**, over **9,000 explicit order cancellations**, and random ledger errors like zero-pound giveaways and negative product quantities.
+The raw source dataset arrived with structural challenges: 135,080 rows missing customer IDs, over 9,000 explicit order cancellations, and random ledger errors like zero-pound giveaways and negative product quantities. 
 
 To ensure the source data remained completely untampered with and auditable, I built a dedicated relational SQL View called `cleaned_transactions` to execute all transformations programmatically:
 
@@ -65,9 +76,7 @@ WHERE t.unit_price > 0;
 ### Advanced Analytical Models
 
 #### 1. RFM Customer Segmentation
-Using SQL window functions (`NTILE`), I segmented our customer base across Recency, Frequency, and Monetary scores, mapping them into clear behavioral tiers:
-*   **Champions & Loyal Customers:** The highest-value groups, characterized by high purchase frequency and monetary investment.
-*   **At Risk & Lost Customers:** Tiers requiring urgent re-engagement campaigns or flagged as inactive.
+Using SQL window functions (`NTILE`), I segmented our customer base across Recency, Frequency, and Monetary scores, mapping them into clear behavioral tiers: Champions, Loyal, At Risk, and Lost.
 
 #### 2. Market Basket Co-occurrence Mining
 To drive warehouse optimization and cross-selling features, I built a co-occurrence query inside PostgreSQL that calculated the exact count of unique invoices containing distinct pairs of product codes, identifying high-frequency items bought together.
@@ -76,7 +85,7 @@ To drive warehouse optimization and cross-selling features, I built a co-occurre
 
 ### Dashboard Data Modeling & DAX Layer
 
-I extracted the processed views from PostgreSQL and loaded them into Power BI using a clean **Star Schema** layout: a centralized `cleaned_transactions` fact table linked directly to custom `Date` and `rfm_customers` dimension tables.
+I extracted the processed views from PostgreSQL and loaded them into Power BI using a clean **Star Schema** layout: a centralized `cleaned_transactions` fact table linked directly to custom `Date` and `rfm_customers` dimension tables. 
 
 To make the report dynamic, I avoided hardcoded numbers and built a robust calculated DAX layer:
 
@@ -89,7 +98,7 @@ To make the report dynamic, I avoided hardcoded numbers and built a robust calcu
 ### Headline Strategic Insights
 
 *   **Massive Geographic Concentration:** An overwhelming **84.03% of total revenue is locked entirely within the UK**. If a local economic downturn strikes, the business has very little insulation. The Netherlands, Ireland, and Germany represent the strongest international footholds to expand into.
-*   **Retention is the True Growth Engine:** A massive **65.58% of our audience are repeat customers**, generating **£7.79M of overall sales value** compared to a small fraction from one-time shoppers.
+*   **Retention is the True Growth Engine:** A massive **65.58% of our audience are repeat customers**, generating **£7.79M of overall sales value** compared to a small fraction from one-time shoppers. 
 *   **Severe Revenue Concentration:** A tiny elite circle of **434 VIP spenders (the top 10% tier) generates a massive 61.38% of total revenue**. Retaining these specific individuals through a VIP loyalty ecosystem is mission-critical.
 *   **Operational Time Constraints:** System traffic and shipping orders aggressively cluster on **Thursdays around 12:00 noon**. This directly indicates exactly when the company needs peak warehouse fulfillment staffing and customer support active.
 
@@ -97,7 +106,7 @@ To make the report dynamic, I avoided hardcoded numbers and built a robust calcu
 
 ### The Big Picture Takeaway
 
-When you stop looking at data metrics one by one and connect them, a massive strategic truth surfaces: **This business is highly concentrated almost everywhere you look.**
+When you stop looking at data metrics one by one and connect them, a massive strategic truth surfaces: **This business is highly concentrated almost everywhere you look.** 
 
 Most revenue relies on one country. Most value relies on a tiny pocket of repeat buyers. Most weekly transaction traffic relies on a tiny multi-hour window on Thursdays. While the current top-line numbers look successful on paper, the lack of diversification means any disruption to that core customer base or peak operational window presents a serious risk.
 
@@ -106,3 +115,5 @@ Most revenue relies on one country. Most value relies on a tiny pocket of repeat
 ### What I Learned & Challenges Overcome
 *   **The "Data Ghost" Problem:** Discovered that Hong Kong generated high revenue numbers but showed zero registered customers. Investigation confirmed that all Hong Kong orders were executed as guest checkouts with no recorded customer IDs—proving that metrics can be correct on paper but highly misleading without proper analysis.
 *   **Mean vs. Median Distributions:** The raw average order value looked high (£494.10) but comparing it to the median order value (£303.84) exposed that a tiny pocket of wholesale bulk buyers was inflating the average, proving why checking statistical distribution symmetry is vital.
+
+</article>
