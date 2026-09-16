@@ -102,6 +102,7 @@ layout: default
   </div>
 
   <h1 class="content-title divided" style="text-align: center; margin-bottom: 30px; margin-top: 40px;">Featured Analytics Case Studies</h1>
+  <!-- 📐 SLIDESHOW FRAMEWORK LAYOUT CARRIERS -->
   <style>
     .slider-frame {
       width: 100%;
@@ -151,11 +152,11 @@ layout: default
     
     input[name="slide-control"] { display: none; }
     
-    /* 🛠️ CORE LOGIC FIXED: RADIONS NOW PROPERLY TARGET SIBLINGS IN ORDER */
     #slide1:checked ~ .slide-wrapper { animation: none; transform: translateX(0); }
     #slide2:checked ~ .slide-wrapper { animation: none; transform: translateX(-33.333%); }
     #slide3:checked ~ .slide-wrapper { animation: none; transform: translateX(-66.666%); }
 
+    /* 📐 90-DEGREE FLUSH EDGED CHEVRON STRIP CONTROLS */
     .arrow-btn {
       position: absolute;
       top: 0;
@@ -177,10 +178,9 @@ layout: default
     .next-arrow { right: 0; }
     .arrow-btn svg { width: 18px; height: 18px; fill: none; stroke: #ffffff; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
 
-    /* SWAPS ARROWS VISIBILITY AUTOMATICALLY */
     #slide1:checked ~ .arrow1 { display: flex !important; }
     #slide2:checked ~ .arrow2 { display: flex !important; }
-    #slide3:checked ~ .arrow3 { display: flex !important; }
+    #slide3:checked ~ .arrow3 { display: block !important; }
     
     .arrow-init { display: flex; }
     #slide1:checked ~ .arrow-init, #slide2:checked ~ .arrow-init, #slide3:checked ~ .arrow-init { display: none !important; }
@@ -193,9 +193,8 @@ layout: default
     }
   </style>
 
-  <!-- 🎬 UNBROKEN SLIDER ARCHITECTURE WINDOW -->
+  <!-- 🎬 DUAL AUTO-MANUAL SLIDER CONTEXT LAYER -->
   <div class="slider-frame">
-    <!-- Radio Triggers Placed at the top level of the slider container -->
     <input type="radio" name="slide-control" id="slide1">
     <input type="radio" name="slide-control" id="slide2">
     <input type="radio" name="slide-control" id="slide3">
@@ -233,7 +232,7 @@ layout: default
       </div>
     </div>
 
-    <!-- Arrow Switch Decks -->
+    <!-- Arrow Switch Logic Tracks -->
     <div class="arrow-init">
       <label for="slide3" class="arrow-btn prev-arrow"><svg viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7"/></svg></label>
       <label for="slide2" class="arrow-btn next-arrow"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></label>
@@ -254,3 +253,4 @@ layout: default
   </div>
 
 </main>
+
