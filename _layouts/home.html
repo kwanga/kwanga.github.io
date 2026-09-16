@@ -9,7 +9,7 @@ layout: null
   <title>Fanan Kwanga | Portfolio</title>
   
   <style>
-    /* 🧭 FULL-PAGE mandatories SCROLL SNAPPING CONTROLS */
+    /* 🧭 MANDATORY FULL-PAGE SNAP CONTROLS */
     html, body {
       margin: 0 !important;
       padding: 0 !important;
@@ -54,34 +54,51 @@ layout: null
       border: 1px solid #000000;
     }
 
-    /* 🧠 NEW PREMIUM CARD HOVER INTERACTION LOGIC ENGINE */
+    /* 🧠 GLOWING TECH CARD HOVER CONTROLLER */
     .skills-hover-card {
       flex: 1;
       min-width: 135px;
       background: #000000;
       border: 1px solid #222;
       border-radius: 6px;
-      padding: 20px 12px;
+      padding: 22px 14px;
       box-shadow: 0 6px 16px rgba(0,0,0,0.15);
       display: flex;
       flex-direction: column;
       box-sizing: border-box;
-      /* 🚀 CSS SPRING REACTION TRANSITION TRIGGER */
-      transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.25s ease;
+      transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease, border-color 0.3s ease;
     }
+    
+    /* THE CARD ACTION REACTION */
     .skills-hover-card:hover {
-      transform: scale(1.05) translateY(-5px);
-      box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+      transform: scale(1.04) translateY(-6px);
+      box-shadow: 0 14px 28px rgba(0,0,0,0.4);
       border-color: #f2c811;
     }
 
-    /* 🎯 BRAND LOGO ANIMATION TIMELINES */
+    /* 🎨 GLOWING VECTOR SVG HOVER ANIMATION TIMELINES */
+    .skills-hover-card svg {
+      transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.3s ease;
+    }
+    .skills-hover-card:hover svg {
+      transform: scale(1.18) translateY(-2px);
+      filter: drop-shadow(0 0 8px #f2c811);
+    }
+
+    /* SMOOTH ICON COLOR TRANSITIONS */
+    .skills-hover-card svg path, .skills-hover-card svg circle {
+      transition: stroke 0.3s ease, fill 0.3s ease;
+    }
+    .skills-hover-card:hover svg path, .skills-hover-card:hover svg circle {
+      stroke: #f2c811 !important;
+    }
+
     .social-icon-link {
       display: inline-block;
       transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
     .social-icon-link:hover {
-      transform: scale(1.2) translateY(-4px);
+      transform: scale(1.25) translateY(-4px);
     }
   </style>
 </head>
@@ -114,25 +131,25 @@ layout: null
     </div>
   </section>
   <!-- ⬜ SLIDE 2: KEY IMPACT SCORECARDS BLOCK (CLEAN SOLID WHITE) -->
-  <section class="full-screen-slide" style="background-color: #ffffff;">
+  <section class="full-screen-slide" style="background-color: #f2c811;">
     <div style="width: 100%; max-width: 760px; font-family: sans-serif; box-sizing: border-box; clear: both; display: block;">
       <span style="font-size: 0.8rem; font-weight: bold; letter-spacing: 2px; color: #555; display: block; margin-bottom: 5px; text-align: center;">BY THE NUMBERS</span>
       <h2 style="font-size: 2.2rem; font-weight: bold; color: #000; margin: 0 0 40px 0; text-align: center; border: none; font-family: serif;">Key Impact</h2>
 
       <div style="display: flex; flex-direction: row; justify-content: space-between; gap: 15px; width: 100%; flex-wrap: wrap; box-sizing: border-box;">
-        <div style="flex: 1; min-width: 160px; background: #000000; border: 1px solid #111; border-radius: 6px; padding: 25px 15px; text-align: center; box-shadow: 0 6px 16px rgba(0,0,0,0.12); transition: transform 0.25s ease;">
+        <div style="flex: 1; min-width: 160px; background: #000000; border: 1px solid #111; border-radius: 6px; padding: 25px 15px; text-align: center; box-shadow: 0 6px 16px rgba(0,0,0,0.12);">
           <div style="font-size: 2.4rem; font-weight: bold; color: #f2c811; margin-bottom: 5px;">5+</div>
           <div style="font-size: 0.85rem; color: #aaa; font-weight: 500; line-height: 1.3;">End-to-End Projects Built</div>
         </div>
-        <div style="flex: 1; min-width: 160px; background: #000000; border: 1px solid #111; border-radius: 6px; padding: 25px 15px; text-align: center; box-shadow: 0 6px 16px rgba(0,0,0,0.12); transition: transform 0.25s ease;">
+        <div style="flex: 1; min-width: 160px; background: #000000; border: 1px solid #111; border-radius: 6px; padding: 25px 15px; text-align: center; box-shadow: 0 6px 16px rgba(0,0,0,0.12);">
           <div style="font-size: 2.4rem; font-weight: bold; color: #f2c811; margin-bottom: 5px;">10M+</div>
           <div style="font-size: 0.85rem; color: #aaa; font-weight: 500; line-height: 1.3;">Rows Cleaned &amp; Modeled</div>
         </div>
-        <div style="flex: 1; min-width: 160px; background: #000000; border: 1px solid #111; border-radius: 6px; padding: 25px 15px; text-align: center; box-shadow: 0 6px 16px rgba(0,0,0,0.12); transition: transform 0.25s ease;">
+        <div style="flex: 1; min-width: 160px; background: #000000; border: 1px solid #111; border-radius: 6px; padding: 25px 15px; text-align: center; box-shadow: 0 6px 16px rgba(0,0,0,0.12);">
           <div style="font-size: 2.4rem; font-weight: bold; color: #f2c811; margin-bottom: 5px;">3+</div>
           <div style="font-size: 0.85rem; color: #aaa; font-weight: 500; line-height: 1.3;">Data Pipelines Deployed</div>
         </div>
-        <div style="flex: 1; min-width: 160px; background: #000000; border: 1px solid #111; border-radius: 6px; padding: 25px 15px; text-align: center; box-shadow: 0 6px 16px rgba(0,0,0,0.12); transition: transform 0.25s ease;">
+        <div style="flex: 1; min-width: 160px; background: #000000; border: 1px solid #111; border-radius: 6px; padding: 25px 15px; text-align: center; box-shadow: 0 6px 16px rgba(0,0,0,0.12);">
           <div style="font-size: 2.4rem; font-weight: bold; color: #f2c811; margin-bottom: 5px;">5</div>
           <div style="font-size: 0.85rem; color: #aaa; font-weight: 500; line-height: 1.3;">Business Cases Solved</div>
         </div>
@@ -140,7 +157,7 @@ layout: null
     </div>
   </section>
 
-  <!-- 🟨 SLIDE 3: ANIMATED EXTREMELY RESPONSIVE SKILLS MATRIX DECK (SOLID YELLOW) -->
+  <!-- 🟨 SLIDE 3: HIGH-TECH ANIMATED SVG SKILLS MATRIX DECK (SOLID YELLOW) -->
   <section class="full-screen-slide" style="background-color: #f2c811;">
     <div style="width: 100%; max-width: 760px; font-family: sans-serif; box-sizing: border-box; clear: both; display: block;">
       <span style="font-size: 0.8rem; font-weight: bold; letter-spacing: 2px; color: #333; display: block; margin-bottom: 5px; text-align: center;">EXPERTISE</span>
@@ -148,9 +165,11 @@ layout: null
 
       <div style="display: flex; flex-direction: row; justify-content: space-between; gap: 10px; width: 100%; flex-wrap: wrap; box-sizing: border-box;">
         
-        <!-- CARD 1 -->
+        <!-- CARD 1: DATA ANALYSIS & VIZ (GLOWING BAR CHART VECTOR) -->
         <div class="skills-hover-card">
-          <div style="font-size: 1.25rem; margin-bottom: 12px;">📊</div>
+          <div style="height: 32px; display: flex; align-items: center; margin-bottom: 12px;">
+            <svg viewBox="0 0 24 24" style="width:28px; height:28px;"><path stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round" d="M3 20h18M6 16v-4m4 4V8m4 8v-6m4 6V4"/></svg>
+          </div>
           <h3 style="font-size: 0.95rem; font-weight: bold; color: #fff; margin: 0 0 8px 0;">Data Analysis &amp; Viz</h3>
           <p style="font-size: 0.78rem; color: #aaa; line-height: 1.4; margin: 0 0 15px 0;">Dashboard design, stakeholder reporting, and visual storytelling that drives decisions.</p>
           <div style="display: flex; flex-wrap: wrap; gap: 5px; margin-top: auto;">
@@ -159,9 +178,11 @@ layout: null
           </div>
         </div>
 
-        <!-- CARD 2 -->
+        <!-- CARD 2: PROGRAMMING (GLOWING LOOP PULSE VECTOR) -->
         <div class="skills-hover-card">
-          <div style="font-size: 1.25rem; margin-bottom: 12px;">📉</div>
+          <div style="height: 32px; display: flex; align-items: center; margin-bottom: 12px;">
+            <svg viewBox="0 0 24 24" style="width:28px; height:28px;"><path stroke="#a855f7" stroke-width="2.5" stroke-linecap="round" fill="none" d="M4 12c4-6 8-6 12 0s8 6 12 0"/><circle cx="10" cy="12" r="2" fill="#a855f7"/></svg>
+          </div>
           <h3 style="font-size: 0.95rem; font-weight: bold; color: #fff; margin: 0 0 8px 0;">Programming</h3>
           <p style="font-size: 0.78rem; color: #aaa; line-height: 1.4; margin: 0 0 15px 0;">Statistical analysis, EDA, hypothesis testing, and writing reproducible clean code.</p>
           <div style="display: flex; flex-wrap: wrap; gap: 5px; margin-top: auto;">
@@ -170,9 +191,11 @@ layout: null
           </div>
         </div>
 
-        <!-- CARD 3 -->
+        <!-- CARD 3: BUSINESS CASE (GLOWING SEGMENT MATRIX VECTOR) -->
         <div class="skills-hover-card">
-          <div style="font-size: 1.25rem; margin-bottom: 12px;">💼</div>
+          <div style="height: 32px; display: flex; align-items: center; margin-bottom: 12px;">
+            <svg viewBox="0 0 24 24" style="width:28px; height:28px;" fill="none" stroke="#0ea5e9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 17V11M13 17V7M17 17v-4"/></svg>
+          </div>
           <h3 style="font-size: 0.95rem; font-weight: bold; color: #fff; margin: 0 0 8px 0;">Business Case</h3>
           <p style="font-size: 0.78rem; color: #aaa; line-height: 1.4; margin: 0 0 15px 0;">Decision-focused analysis across customer metrics, operations, and pipeline KPIs.</p>
           <div style="display: flex; flex-wrap: wrap; gap: 5px; margin-top: auto;">
@@ -181,9 +204,11 @@ layout: null
           </div>
         </div>
 
-        <!-- CARD 4 -->
+        <!-- CARD 4: ML MODELING (GLOWING NODAL CONNECT ENGINE VECTOR) -->
         <div class="skills-hover-card">
-          <div style="font-size: 1.25rem; margin-bottom: 12px;">🧠</div>
+          <div style="height: 32px; display: flex; align-items: center; margin-bottom: 12px;">
+            <svg viewBox="0 0 24 24" style="width:28px; height:28px;" fill="none" stroke="#ec4899" stroke-width="2.5"><circle cx="6" cy="6" r="2"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="12" r="2"/><path stroke-linecap="round" d="M8 8l8 3M8 16l8-3"/></svg>
+          </div>
           <h3 style="font-size: 0.95rem; font-weight: bold; color: #fff; margin: 0 0 8px 0;">ML Modeling</h3>
           <p style="font-size: 0.78rem; color: #aaa; line-height: 1.4; margin: 0 0 15px 0;">Feature engineering, classification, regression, and validation modeling execution.</p>
           <div style="display: flex; flex-wrap: wrap; gap: 5px; margin-top: auto;">
@@ -191,9 +216,11 @@ layout: null
           </div>
         </div>
 
-        <!-- CARD 5 -->
+        <!-- CARD 5: CLOUD ANALYTICS (GLOWING DATA PIPELINE VESSEL VECTOR) -->
         <div class="skills-hover-card">
-          <div style="font-size: 1.25rem; margin-bottom: 12px;">☁️</div>
+          <div style="height: 32px; display: flex; align-items: center; margin-bottom: 12px;">
+            <svg viewBox="0 0 24 24" style="width:28px; height:28px;" fill="none" stroke="#10b981" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a7 7 0 100-14 7 7 0 000 14z"/><circle cx="12" cy="12" r="2"/><path stroke-linecap="round" d="M12 2v3M5 5l2 2m10-2l-2 2"/></svg>
+          </div>
           <h3 style="font-size: 0.95rem; font-weight: bold; color: #fff; margin: 0 0 8px 0;">Cloud Analytics</h3>
           <p style="font-size: 0.78rem; color: #aaa; line-height: 1.4; margin: 0 0 15px 0;">ETL pipelines infrastructure, cloud storage design, data verification frameworks.</p>
           <div style="display: flex; flex-wrap: wrap; gap: 5px; margin-top: auto;">
@@ -204,102 +231,18 @@ layout: null
       </div>
     </div>
   </section>
-  <!-- ⬜ SLIDE 4: FEATURED CASE STUDIES WORKSPACE & ANIMATED THEME FOOTER (SOLID WHITE) -->
-  <section class="full-screen-slide" style="background-color: #ffffff;">
+  <!-- ⬜ SLIDE 4: FEATURED CASE STUDIES CAROUSEL & ANIMATED BRAND FOOTER (SOLID WHITE) -->
+  <section class="focus-card-section" style="background-color: #f2c811;">
     <div style="width: 100%; max-width: 760px; box-sizing: border-box;">
       <h2 style="text-align: center; margin-bottom: 35px; font-family: serif; border: none; font-size: 2.2rem; font-weight: bold; color: #000;">Featured Analytics Case Studies</h2>
 
-      <style>
-        .slider-frame {
-          width: 100%;
-          max-width: 760px;
-          height: 420px;
-          margin: 0 auto;
-          position: relative;
-          overflow: hidden;
-          border-radius: 8px;
-          box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-          border: 1px solid rgba(0,0,0,0.1);
-        }
-        .slide-wrapper {
-          display: flex;
-          width: 300%;
-          height: 100%;
-          transition: transform 0.6s cubic-bezier(0.77, 0, 0.175, 1);
-          animation: autoRotate 20s infinite ease-in-out;
-        }
-        .slider-frame:hover .slide-wrapper {
-          animation-play-state: paused;
-        }
-        .slide-card {
-          width: 33.333%;
-          height: 100%;
-          position: relative;
-        }
-        .slide-card img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
-        .slide-overlay {
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          width: 100%;
-          background: linear-gradient(transparent, rgba(0, 0, 0, 0.88));
-          color: #fff;
-          padding: 25px 65px;
-          box-sizing: border-box;
-          font-family: sans-serif;
-          z-index: 2;
-        }
-        .slide-overlay h3 { margin: 0 0 8px 0; font-size: 1.45rem; color: #fff; font-weight: bold; }
-        .slide-overlay p { margin: 0; font-size: 0.95rem; color: #ddd; line-height: 1.4; }
-        
-        input[name="slide-control"] { display: none; }
-        #slide1:checked ~ .slide-wrapper { animation: none; transform: translateX(0); }
-        #slide2:checked ~ .slide-wrapper { animation: none; transform: translateX(-33.333%); }
-        #slide3:checked ~ .slide-wrapper { animation: none; transform: translateX(-66.666%); }
-
-        .arrow-btn {
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          height: 100%;
-          width: 48px;
-          background: rgba(0, 0, 0, 0.35);
-          display: none;
-          align-items: center;
-          justify-content: center;
-          cursor: pointer;
-          z-index: 10;
-          user-select: none;
-          transition: background 0.2s ease, width 0.15s ease;
-          box-sizing: border-box;
-        }
-        .arrow-btn:hover { background: rgba(0, 0, 0, 0.75); width: 54px; }
-        .prev-arrow { left: 0; }
-        .next-arrow { right: 0; }
-        .arrow-btn svg { width: 18px; height: 18px; fill: none; stroke: #ffffff; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
-
-        #slide1:checked ~ .arrow1, #slide2:checked ~ .arrow2, #slide3:checked ~ .arrow3 { display: flex !important; }
-        .arrow-init { display: flex; }
-        #slide1:checked ~ .arrow-init, #slide2:checked ~ .arrow-init, #slide3:checked ~ .arrow-init { display: none !important; }
-
-        @keyframes autoRotate {
-          0%, 25%    { transform: translateX(0); }
-          33%, 58%   { transform: translateX(-33.333%); }
-          66%, 91%   { transform: translateX(-66.666%); }
-          100%       { transform: translateX(0); }
-        }
-      </style>
-
       <div class="slider-frame">
-        <input type="radio" name="slide-control" id="slide1">
+        <input type="radio" name="slide-control" id="slide1" checked>
         <input type="radio" name="slide-control" id="slide2">
         <input type="radio" name="slide-control" id="slide3">
 
         <div class="slide-wrapper">
+          <!-- SLIDE 1 -->
           <div class="slide-card">
             <a href="{{ '/2026/09/14/online-retail-analytics.html' | relative_url }}">
               <img src="{{ '/assets/images/retail-dashboard.png' | relative_url }}" alt="Retail Analysis Overview">
@@ -309,6 +252,7 @@ layout: null
               </div>
             </a>
           </div>
+          <!-- SLIDE 2 -->
           <div class="slide-card">
             <a href="{{ '/2026/09/14/fiber-outage-tracking.html' | relative_url }}">
               <img src="{{ '/assets/images/fiber-outage-tracking.png' | relative_url }}" alt="Telecom Outage Dashboard">
@@ -318,6 +262,7 @@ layout: null
               </div>
             </a>
           </div>
+          <!-- SLIDE 3 -->
           <div class="slide-card">
             <a href="{{ '/2026/09/14/ports-compliance.html' | relative_url }}">
               <img src="{{ '/assets/images/ports-compliance.png' | relative_url }}" alt="Data Verification Tracking">
@@ -329,7 +274,7 @@ layout: null
           </div>
         </div>
 
-        <!-- Arrow Controls -->
+        <!-- 🛠️ ARROW DECK RIGGED HARMONIOUSLY USING PERSISTENT BLOCK DISPLAY -->
         <div class="arrow-init">
           <label for="slide3" class="arrow-btn prev-arrow"><svg viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7"/></svg></label>
           <label for="slide2" class="arrow-btn next-arrow"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></label>
@@ -346,9 +291,10 @@ layout: null
           <label for="slide2" class="arrow-btn prev-arrow"><svg viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7"/></svg></label>
           <label for="slide1" class="arrow-btn next-arrow"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></label>
         </div>
+
       </div>
 
-      <!-- 🎯 FIXED SOCIALS ANCHOR: SEAMLESSLY PLACED UNDER THE SLIDESHOW CONTAINER -->
+      <!-- 🎯 ACTIVE SOCIAL FOOTER ANCHORED INSIDE THE SNAPPING MATRIX -->
       <div style="margin-top: 40px; text-align: center; display: flex; justify-content: center; gap: 35px; width: 100%; box-sizing: border-box;">
         <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" title="LinkedIn">
           <svg style="width:28px; height:28px; fill:#000;" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
