@@ -226,7 +226,7 @@ layout: default
       #slide2:checked ~ .arrow2 { display: block; }
       #slide3:checked ~ .arrow3 { display: block; }
       .arrow-init { display: block; }
-      #slide1:checked ~ .arrow-init, #slide2:checked ~ .arrow-init, #slide3:checked ~ .arrow-init { display: none; }
+      #slide1:checked ~ .arrow1, #slide2:checked ~ .arrow2, #slide3:checked ~ .arrow3 { display: block !important; }
 
       @keyframes autoRotate {
         0%, 25%    { transform: translateX(0); }
@@ -264,31 +264,19 @@ layout: default
           </a>
         </div>
         
-        <!-- SLIDE 3 (HOUSES EMBEDDED CONSOLE CONNECT SOCIAL LINKS AT THE BASE) -->
+        <!-- SLIDE 3 -->
         <div class="slide-card">
           <a href="{{ '/2026/09/14/ports-compliance.html' | relative_url }}">
             <img src="{{ '/assets/images/ports-compliance.png' | relative_url }}" alt="Data Verification Tracking">
             <div class="slide-overlay">
               <h3>Database Compliance & Governance | Nigerian Ports Authority</h3>
-              <p style="margin-bottom: 15px;">Executing massive cross-table data validation checks to protect regulatory metrics.</p>
-              
-              <!-- 🔗 INTEGRATED COMPACT DIRECT PORTAL LINKS BADGES -->
-              <div style="display: flex; gap: 12px; align-items: center; margin-top: 10px; flex-wrap: wrap;">
-                <span style="font-size: 0.8rem; color: #f2c811; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; font-family: sans-serif;">Connect:</span>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" style="color: #fff; text-decoration: none; font-size: 0.85rem; font-weight: bold; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); padding: 4px 10px; border-radius: 4px; font-family: sans-serif;">💼 LinkedIn</a>
-                <a href="https://substack.com" target="_blank" rel="noopener noreferrer" style="color: #fff; text-decoration: none; font-size: 0.85rem; font-weight: bold; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); padding: 4px 10px; border-radius: 4px; font-family: sans-serif;">✍️ Substack</a>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" style="color: #fff; text-decoration: none; font-size: 0.85rem; font-weight: bold; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); padding: 4px 10px; border-radius: 4px; font-family: sans-serif;">🛠️ GitHub</a>
-              </div>
+              <p>Executing massive cross-table data validation checks to protect regulatory metrics and digitize legacy records.</p>
             </div>
           </a>
         </div>
       </div>
 
-      <!-- Arrow Controls Mapping -->
-      <div class="arrow-init">
-        <label for="slide3" class="arrow-btn prev-arrow"><svg viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7"/></svg></label>
-        <label for="slide2" class="arrow-btn next-arrow"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></label>
-      </div>
+      <!-- Arrow Controls -->
       <div class="arrow1">
         <label for="slide3" class="arrow-btn prev-arrow"><svg viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7"/></svg></label>
         <label for="slide2" class="arrow-btn next-arrow"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></label>
@@ -303,5 +291,14 @@ layout: default
       </div>
 
     </div>
+    
+    <!-- 🧲 INTEGRATED HOVER-STABLE SOCIAL ICON DOCK LOCK -->
+    <div style="margin-top: 30px; text-align: center; display: flex; justify-content: center; gap: 20px; width: 100%; box-sizing: border-box;">
+      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" style="color: #000; text-decoration: none; font-weight: bold; font-size: 0.9rem; font-family: sans-serif; background: rgba(0,0,0,0.04); border: 1px solid rgba(0,0,0,0.1); padding: 8px 16px; border-radius: 4px; display: inline-flex; align-items: center; gap: 6px;">💼 LinkedIn Profile</a>
+      <a href="https://substack.com" target="_blank" rel="noopener noreferrer" style="color: #000; text-decoration: none; font-weight: bold; font-size: 0.9rem; font-family: sans-serif; background: rgba(0,0,0,0.04); border: 1px solid rgba(0,0,0,0.1); padding: 8px 16px; border-radius: 4px; display: inline-flex; align-items: center; gap: 6px;">✍️ Substack Publication</a>
+      <a href="https://github.com" target="_blank" rel="noopener noreferrer" style="color: #000; text-decoration: none; font-weight: bold; font-size: 0.9rem; font-family: sans-serif; background: rgba(0,0,0,0.04); border: 1px solid rgba(0,0,0,0.1); padding: 8px 16px; border-radius: 4px; display: inline-flex; align-items: center; gap: 6px;">🛠️ GitHub Repositories</a>
+    </div>
+
   </div>
 </section>
+
