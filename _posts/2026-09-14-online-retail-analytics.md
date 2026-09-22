@@ -1,5 +1,6 @@
 ---
-layout: page
+layout: project-slides
+title: "Decoding Retail Behavior: An End-to-End Pipeline"
 title: "Decoding Retail Behavior: An End-to-End Data Pipeline Analysis"
 date: 2026-09-14
 excerpt: "Taking 541,000+ raw e-commerce transaction lines from Excel, building a relational cleaning infrastructure in PostgreSQL, and deploying an interactive Power BI operational dashboard."
