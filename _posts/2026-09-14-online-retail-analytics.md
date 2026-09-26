@@ -1,6 +1,6 @@
 ---
 layout: project-slides
-title: "Solving a 97% Retention Crisis Through Data-Driven Experimentation"
+title: "Uncovering an 84% Revenue Concentration Risk Through Customer Segmentation"
 date: 2026-09-14
 github_repo_url: "https://github.com"
 slides:
